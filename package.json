@@ -1,42 +1,28 @@
 {
-  "name": "co-wechat-middleware",
-  "version": "1.0.0",
-  "description": "wechat api middleware for co",
-  "main": "lib/wechat.js",
-  "scripts": {
-    "test": "make test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/liwenyue/co-wechat"
-  },
-  "keywords": [
-    "wechat",
-    "wexin"
-  ],
-  "author": "Jackson Tian liwenyue",
-  "license": "MIT",
-  "dependencies": {
-    "ejs": ">=1.0.0",
-    "raw-body": "^2.2.0",
-    "wechat-crypto": "0.0.2",
-    "xml2js": "0.4.4"
-  },
-  "devDependencies": {
-    "coveralls": "*",
-    "expect.js": "*",
-    "koa": "^2.0.0",
-    "koa-generic-session": "*",
-    "mocha": "*",
-    "mocha-lcov-reporter": "*",
-    "muk": "*",
-    "nyc": "^10.2.0",
-    "rewire": "*",
-    "should": "~3.0.0",
-    "supertest": "*",
-    "travis-cov": "*"
+  "name": "co-wechat-enterprise-api",
+  "version": "0.0.1",
+  "description": "基于 co-wechat/wechat-enterprise-api，微信公共平台企业号版本Node API库 ES6版本",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
   },
   "files": [
+    "index.js",
     "lib"
-  ]
+  ],
+  "scripts": {
+    "doc": "dox -a <./lib/* > API.md"
+  },
+  "author": "hdumok",
+  "license": "ISC",
+  "keywords": [
+    "weixin",
+    "wechat",
+    "enterprise",
+    "api"
+  ],
+  "dependencies": {
+    "formstream": ">=0.0.8",
+    "urllib": ">=0.5.17"
+  }
 }
